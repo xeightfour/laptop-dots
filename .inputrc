@@ -1,0 +1,50 @@
+### (Don't even) use at your own risk C:
+# vim: set ft=readline:
+
+# In case there is finally something useful written by void devs \:
+$include /etc/inputrc
+
+set show-all-if-ambiguous on
+set completion-query-items 32
+
+set completion-ignore-case on
+set match-hidden-files off
+set mark-symlinked-directories on
+# Occasionally useless \:
+set skip-completed-text on
+
+set visible-stats on
+set colored-stats on
+set colored-completion-prefix on
+
+set page-completions off
+
+# Not sure what this one does <:
+set menu-complete-display-prefix on
+
+set bell-style none
+
+set bind-tty-special-chars off
+
+### TODO: Add more useful bindings (& remove the ones not needed)
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+"\t": menu-complete
+"\e[Z": menu-complete-backward
+
+# Alt+Backspace?
+"\e\C-h": backward-kill-word
+"\e\C-?": backward-kill-word
+
+"\C-w": backward-kill-word
+"\C-u": backward-kill-line
+
+"\C-b": backward-word
+"\C-f": forward-word
+"\C-a": beginning-of-line
+"\C-e": end-of-line
+
+# Deletion candy
+"\C-h": backward-delete-char
