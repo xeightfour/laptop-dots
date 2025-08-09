@@ -55,5 +55,7 @@ set bind-tty-special-chars off
 "\C-a": beginning-of-line
 "\C-e": end-of-line
 
+"\C-l": clear-screen
+
 # Deletion candy
 "\C-h": backward-delete-char
