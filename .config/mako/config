@@ -1,0 +1,28 @@
+# Yet another modeline
+# vim: set ft=dosini:
+
+font=Annotation Mono Medium 18
+
+# Still doesn't look good >:
+width=400
+height=100
+
+padding=10
+border-size=1
+max-visible=7
+
+# Palette by catppuccin-mocha
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#89b4fa
+progress-color=over #313244
+
+# Hanging between 64 & 48
+max-icon-size=48
+
+# What's so special about powers of two \:
+default-timeout=6400
+
+[urgency=high]
+border-color=#f38ba8
+default-timeout=0
