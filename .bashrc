@@ -105,6 +105,9 @@ win() {
 	export _JAVA_AWT_WM_NONREPARENTING=1
 
 	export NO_AT_BRIDGE=1
+
+	# Hopefully this'd be enough <:
+	export WLR_DRM_DEVICES=/dev/dri/card1
 	
 	echo 'Launching Wayland session...'
 	cd ~ && exec dbus-run-session -- sh -c 'pipewire & exec sway'
